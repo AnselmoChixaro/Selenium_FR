@@ -1,0 +1,224 @@
+Selenium or QTP ?
+
+Browser Compatibility
+Distribution
+Application under test
+Repository
+Language support
+Vendor support
+
+
+Why Selenium?
+
+Free and Open-Source
+It has a large ser base and helping community
+Cross-browsing cappability
+Plataform compatibility
+Support for different programing languages.
+
+Whats is Seleniium ? Whats are its different components ? 
+
+Selenium is one of the most popular Automation test suite
+It is designned in a way to helps in automating web applications with a wide range of brosers and platforms.
+It is Open Source.It's not a single tool it's a test suite. 
+
+
+Components 
+Selenium IDE - It a Record and Playback tool and it's distributed as Firefox plugin
+
+
+Selenium RC - It's a server used in execution of the tests. (Decrecepated)
+
+
+Selenium WebDriver - Directly communicates with the browser.
+
+
+Seleniium GRID - It's used to distribuite the text execution on mutiple platforms and environment concurrently. That means Support Cross broswer
+
+
+What is a Seleniium framework ?
+
+It is a code structure for making code maintenace simpler and the code readability better.
+The framework involvers braking the entire code into smaller pieace of code, which test a particular funcionality.
+It can also be structured in a way the test cases can be executed from external application.
+ 
+ 
+
+The Differents frameworks ?
+
+Data Driven
+
+It is the technique of separating the "data set" from the actual the case. It dependent of the test data.
+
+
+Keyword driver
+
+This technique in which all the operations to be performed are writeen separately from the actual test case.
+
+Hybrid.
+
+We use the best techiniques of boths.
+
+What are the challenges and limitationg of Seleniium webdriver ?
+
+Challenges 
+It is difficult to test Image based application
+Seleniium need outise support for reporting generation. It's dependent of TestNG or Jenkins
+Canntor perform tests on web services like SOAP or Rest Using Selenium
+
+Limitations
+Cannot test mobile applications
+Hangling the pop-ups it's difficult
+Limiting reporting
+It's not supposed to support Dynamic Content.
+
+Drawbacks of The Selenium RC ?
+
+It's decrecepated.
+Server connection is required vefore executing the test script.
+Selenium RC's architecture is more complication
+Apis are less object oriented.
+Selenium RC is slower since it uses a JavaScript program
+
+How Seleniium Grid works ?
+
+Grid is capable of  of coordinating the WebDriver tests/ RC Tests which can rim simulaneously on varios web Browsers.
+
+Selenium Web Driver Capabilities ?
+
+WebDriver is requeried for improve the support for handling multiple frames, pop -ups, multiple broswers and alerts.
+And also helps on page navigate, dragn and drop features, and suport apex ajas ui bases elements.
+
+List out the different test types which Selenium can support ?
+
+For web-bases application testsin, Selenium can be used for functional testing and regression testing.
+For CI CD Jekins, hudson, Quiackbuild
+
+
+Why choose Python over Java ?
+
+Python is faster
+Java user traditional braces Python uses indentation
+Pythons used dynamic typed
+
+
+Whas is Selenese ? Different types of Selenese commands used ? 
+
+Actions - Use to interect with the elements
+
+Asserts - Assertions are used as checkpoints.
+
+Accessors - accessors are used for stores values in a particular variable.
+
+How to build a object repository ?
+
+
+
+Explain about the wait ?
+
+Implicit Wait = tells to the webdriver to wait for certain amount of time before it throws an exception
+ 
+
+Explicit Wait = explictir waits are confined to a particular web element. Is code to wait for a certatin condition to occur before proceding further in the code.
+
+Why to use the Selenium IDE ? 
+
+Is the simplest and easisted the all tool. It allows you to record and playback the scripts.
+It makes easier to learn Selenium.
+
+What are Locatros in Selenium ?
+
+Locators are defined as an adress that identifies a web element uniquely withn the webpage.
+
+What the types of Locators Selenium ?
+
+Id, Name, LinkTExt, PartialLinkText, CSS Selector, XPATH
+
+How to use findElement and findElements ?
+
+findElement to find the first match
+
+How to work with Excel Files in Selenium ?
+
+JXL
+APACHE POI
+
+What is a JavaScriptExecutor or  How to scroll using Selelnium?
+
+JavaScriptExecutor is an interface that helps to execute JavaScript through SeleniumWebDriber
+
+What is POM? Whats are its advantages ?
+
+Page Object Model is a design patter in test automation to create an Object Repository for web UI elements.
+Make automation framwrok friendly more durable and comprehensive.
+Keeps the tests and lement locators separately.
+Repository is Independent of Autoamtion Tests
+Able to reuse page object methods
+Pom is best applicable for the applications which contain mutiple pages
+Easier to write because it usees the business domain language.
+
+
+What is the page factory ? 
+Page factory is an in-built page object model pattern send to initialize web elements which are defined in Page Objects 
+
+POM and Page Factory difference ?
+
+POM it is a class which represents the web page and holds the fucnionalities 
+
+Factory It is a way to initialize the web elements within the page object when the instance is created.
+
+How to handle mouse and keyboard and mouse actions ?
+
+We handle using the Actions class.
+
+What is an Actions Class ?
+
+It handle special keboard and mose events using the Advanced User Interactions Apis
+
+Can Selenium handle windows pop-ups ?
+
+Using the alert class or using the robot class.
+
+Robot class provides control over the mouse and keyboard.
+
+How do you achive synchronization in WebDriver ?
+
+It is a mechanism which involves more than on components to work paraller with each other 
+
+types 
+
+Uncondtional      Conditional
+
+Take a screenshot in Selenium ?
+
+TakesScreenShoot interface.
+
+How to handle multiple windows in Selenium?
+
+A windows handle is a unique identifier that holds the adress of all the windows. This is basically a pointer to a window, which returns the string value.
+
+what are listners in Selenium ?
+
+It is defined as an interface tat modifies the behavior of the sustem. Listners allow customization of report and logs.
+
+TestNG features ?
+
+Selelnium provides PROXY to redirect direct to the proxy.
+
+how handle network latency in Selenium? 
+
+driver.manager.pageloadtime()
+
+how can you capture service-side log in Selenium?
+
+In order to get the server-side log.
+
+Java-jar.jar-log selenium.log
+
+Selenium not suport database test. It can be partially done with java.jdbc api 
+
+
+
+
+
+
