@@ -1,21 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-26T07:09:09 BRT" name="Default suite" finished-at="2023-10-26T07:09:30 BRT" duration-ms="20545">
+  <suite started-at="2023-10-26T11:19:35 BRT" name="Default suite" finished-at="2023-10-26T11:20:31 BRT" duration-ms="56068">
     <groups>
     </groups>
-    <test started-at="2023-10-26T07:09:09 BRT" name="Default test" finished-at="2023-10-26T07:09:30 BRT" duration-ms="20545">
+    <test started-at="2023-10-26T11:19:35 BRT" name="Default test" finished-at="2023-10-26T11:20:31 BRT" duration-ms="56068">
       <class name="testcase.LoginTests">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testcase.LoginTests@78691363]" started-at="2023-10-26T07:09:09 BRT" name="Setup" finished-at="2023-10-26T07:09:21 BRT" duration-ms="11941" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:19:35 BRT" name="Setup" finished-at="2023-10-26T11:19:47 BRT" duration-ms="11441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="LoginTest()[pri:0, instance:testcase.LoginTests@78691363]" started-at="2023-10-26T07:09:21 BRT" name="LoginTest" finished-at="2023-10-26T07:09:30 BRT" duration-ms="8428" status="PASS">
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:19:47 BRT" name="LoginTest" data-provider="loginData" finished-at="2023-10-26T11:19:54 BRT" duration-ms="6726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anselmo@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Saori]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcase.LoginTests@78691363]" started-at="2023-10-26T07:09:30 BRT" name="TearDown" finished-at="2023-10-26T07:09:30 BRT" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:19:54 BRT" name="TearDown" finished-at="2023-10-26T11:19:54 BRT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:19:54 BRT" name="Setup" finished-at="2023-10-26T11:20:07 BRT" duration-ms="13277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:20:07 BRT" name="LoginTest" data-provider="loginData" finished-at="2023-10-26T11:20:13 BRT" duration-ms="5901" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anselmo.chixa@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Saori31]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=118.0.5993.89)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c432705a337d1b76bcbb3fffa4385f6, sendKeysToElement {id=DDAF8A9FE6AF6691DFB175D3949ED7E6_element_196, value=[Ljava.lang.CharSequence;@71664560}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\suporte\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50076}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50076/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9c432705a337d1b76bcbb3fffa4385f6)] -> xpath: //input[@id='password']]
+Session ID: 9c432705a337d1b76bcbb3fffa4385f6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=118.0.5993.89)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c432705a337d1b76bcbb3fffa4385f6, sendKeysToElement {id=DDAF8A9FE6AF6691DFB175D3949ED7E6_element_196, value=[Ljava.lang.CharSequence;@71664560}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\suporte\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50076}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50076/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9c432705a337d1b76bcbb3fffa4385f6)] -> xpath: //input[@id='password']]
+Session ID: 9c432705a337d1b76bcbb3fffa4385f6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at testcase.LoginTests.LoginTest(LoginTests.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:20:13 BRT" name="TearDown" finished-at="2023-10-26T11:20:13 BRT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:20:13 BRT" name="Setup" finished-at="2023-10-26T11:20:24 BRT" duration-ms="10723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:20:24 BRT" name="LoginTest" data-provider="loginData" finished-at="2023-10-26T11:20:31 BRT" duration-ms="6687" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anselmo.chixaro@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Saori3112!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcase.LoginTests@35d019a3]" started-at="2023-10-26T11:20:31 BRT" name="TearDown" finished-at="2023-10-26T11:20:31 BRT" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

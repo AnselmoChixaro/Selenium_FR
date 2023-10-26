@@ -5,7 +5,7 @@
     <classes>
       <class name="testcase.LoginTests">
         <methods>
-          <include name="LoginTest"/>
+          <include name="LoginTest" invocation-numbers="1"/>
           <include name="Setup"/>
           <include name="TearDown"/>
         </methods>

@@ -217,7 +217,9 @@ Java-jar.jar-log selenium.log
 
 Selenium not suport database test. It can be partially done with java.jdbc api 
 
+Why use Xpath and not css ?
 
+XPATH are bidirectional flow. So we can traverse both ways. wich is not possible in css.
 
 
 
